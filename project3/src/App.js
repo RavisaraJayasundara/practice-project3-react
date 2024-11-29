@@ -1,7 +1,7 @@
 import './assets/css/compo.css';
 import {useState} from 'react';
 import StudentTable from './components/StudentTable';
-
+import './assets/css/compo.css'
 
 function App() {
   const[fontSize,setfontSize]=useState();
@@ -23,7 +23,11 @@ function App() {
       <button onClick={medium}>M</button>
       <button onClick={large}>L</button>
       <hr/>
-      <StudentTable/>
+      <div className='outerDiv'>
+         <StudentTable/>
+
+      </div>
+      
     </div>
   );
 }
