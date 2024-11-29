@@ -1,5 +1,8 @@
 import './assets/css/compo.css';
 import {useState} from 'react';
+import StudentTable from './components/StudentTable';
+
+
 function App() {
   const[fontSize,setfontSize]=useState();
    const small=()=>{
@@ -20,6 +23,7 @@ function App() {
       <button onClick={medium}>M</button>
       <button onClick={large}>L</button>
       <hr/>
+      <StudentTable/>
     </div>
   );
 }
